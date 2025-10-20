@@ -24,7 +24,7 @@ def get_data_loaders(train_dir, test_dir, batch_size=32):
     return train_loader, test_loader, class_names
 
 if __name__ == "__main__":
-    train_loader, test_loader, class_names = get_data_loaders("../data/train", "../data/test")
+    train_loader, test_loader, class_names = get_data_loaders("/data/train", "/data/test")
     print("Classes:", class_names)
     print("Train batches:", len(train_loader))
     print("Test batches:", len(test_loader))
